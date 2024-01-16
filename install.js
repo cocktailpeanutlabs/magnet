@@ -12,7 +12,8 @@ module.exports = {
   "run": [{
     "method": "shell.run",
     "params": {
-      "message": "git clone https://github.com/candywrap/audiocraft app"
+      //"message": "git clone https://github.com/candywrap/audiocraft app"
+      "message": "git clone -b magnet_xformers_0_0_22_fix https://github.com/peanutcocktail/audiocraft app"
     }
   }, {
     "method": "shell.run",
