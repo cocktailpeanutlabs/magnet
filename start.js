@@ -13,11 +13,11 @@ module.exports = async (kernel) => {
       "url": "{{input.event[0]}}"
     }
   }]
-//  if (kernel.gpu !== 'nvidia') {
+  if (kernel.gpu !== 'nvidia') {
     run[0].params.env = {
       "IGNORE_MEMORY_EFFICIENT": "1"
     }
-//  }
+  }
   return {
     daemon: true,
     run
