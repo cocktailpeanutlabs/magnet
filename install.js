@@ -21,8 +21,8 @@ module.exports = {
       "venv": "env",
       "path": "app",
       "message": [
+        "{{(gpu === 'nvidia' ? self.cmds.nvidia : (gpu === 'amd' ? self.cmds.amd : self.cmds.default))}}",
         "pip install -e .",
-        "{{(gpu === 'nvidia' ? self.cmds.nvidia : (gpu === 'amd' ? self.cmds.amd : self.cmds.default))}}"
       ]
     }
   }, {
