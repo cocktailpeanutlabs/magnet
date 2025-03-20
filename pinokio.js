@@ -1,6 +1,6 @@
 const path = require('path')
 module.exports = {
-  version: 1,
+  version: "3.0",
   title: "MAGNeT",
   description: "MAGNeT is a text-to-music and text-to-sound model capable of generating high-quality audio samples conditioned on text descriptions https://github.com/facebookresearch/audiocraft/blob/main/docs/MAGNET.md",
   icon: "icon.webp",
